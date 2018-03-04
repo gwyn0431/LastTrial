@@ -12,9 +12,8 @@ EBTNodeResult::Type UChooseNextWaypoint::ExecuteTask(UBehaviorTreeComponent& Own
 	auto PatrolRouteComponent = ControlledPawn->FindComponentByClass<UPatrolRoute>();
 	
 	TArray<AActor*> PatrolPoints;
-	if (!ensure(PatrolRouteComponent))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("No Patrol Route Component"))
+	if (!ensure(PatrolRouteComponent)) 
+	{ 
 		return EBTNodeResult::Failed;
 	}
 
