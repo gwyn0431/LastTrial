@@ -2,7 +2,7 @@
 
 #include "LastTrialGameMode.h"
 #include "LastTrialHUD.h"
-#include "LastTrialCharacter.h"
+#include "Player/FirstPersonCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
 ALastTrialGameMode::ALastTrialGameMode()

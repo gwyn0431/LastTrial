@@ -4,10 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "LastTrialProjectile.generated.h"
+#include "BallProjectile.generated.h"
 
 UCLASS(config=Game)
-class ALastTrialProjectile : public AActor
+class ABallProjectile : public AActor
 {
 	GENERATED_BODY()
 
@@ -20,7 +20,7 @@ class ALastTrialProjectile : public AActor
 	class UProjectileMovementComponent* ProjectileMovement;
 
 public:
-	ALastTrialProjectile();
+	ABallProjectile();
 
 	/** called when projectile hits something */
 	UFUNCTION()
