@@ -22,6 +22,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	/** Fires a projectile. */
+	UFUNCTION(BlueprintCallable, Category = "Firing")
 	void OnFire();
 
 	/** Gun mesh: 1st person view (seen only by self) */
